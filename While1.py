@@ -5,7 +5,9 @@ while(m<=n):
     y=float(input("Ingrese el costo del pasaje con tarjeta: "))
     a=float(input("Ingrese el costo de la tarjeta: "))
     b=float(input("Ingrese la carga inicial de la tarjeta: "))
-    if(a>b):
+    if(x<=y):
+        print("No se recuperará")
+    elif(a>b):
         c=0
         h=0
         r=x-y
@@ -23,4 +25,4 @@ while(m<=n):
         else:
             print("no se recuperará")
         print("------------------------------------",h)
-        m=m+1
+    m=m+1
